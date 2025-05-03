@@ -45,16 +45,27 @@
     <!-- Corpo principale pagina con bordo bianco -->
     <div class="container px-5 mt-5">
 
-        <!-- Contenitore della Sezione BITS -->
-        <div class="news-section">
-            <h6 class="text-danger">BITS</h6>
+        <!-- Sezione BITS -->
+        <div class="news-section mb-5">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+                <h6 class="text-danger mb-0">BITS</h6>
+                <div class="d-flex gap-2">
+                    <!-- Freccia sinistra -->
+                    <button class="btn btn-outline-dark btn-sm" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                        &lsaquo;
+                    </button>
+                    <!-- Freccia destra -->
+                    <button class="btn btn-outline-dark btn-sm" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                        &rsaquo;
+                    </button>
+                </div>
+            </div>
 
             <!-- Barra scorrevole con le notizie -->
             <div id="newsCarousel" class="carousel slide" data-bs-wrap="false" data-bs-ride="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-flex">
-                            <!-- Singola Notizia con orario e link all'interno del <p> -->
                             <div class="news-item me-4">
                                 <p class="text-danger mb-1">12:30 <a href="#" class="news-link">Notizia 1 - Titolo Importante</a></p>
                             </div>
@@ -76,7 +87,6 @@
                         </div>
                     </div>
 
-                    <!-- Altre notizie (da visualizzare con il carosello) -->
                     <div class="carousel-item">
                         <div class="d-flex">
                             <div class="news-item me-4">
@@ -100,18 +110,9 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Frecce per scorrere le notizie -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
+
 
 
         <!-- Sezione notizia prima pagina -->
