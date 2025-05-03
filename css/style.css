@@ -13,3 +13,71 @@ body {
 .navbar-nav .nav-link {
     padding: 0.5rem 1rem; /* 8px 16px */
 }
+
+/* Titolo BITS molto più piccolo */
+.news-section h6 {
+    font-size: 1rem; /* Ancora più piccolo */
+    font-weight: normal;
+}
+
+/* Orario in rosso (formato HH:MM) */
+.text-danger {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.news-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.news-link:hover {
+    color: #666666; /* Colore rosso al passaggio del mouse */
+}
+
+/* Barra scorrevole per le notizie */
+.news-section {
+    position: relative;
+}
+
+/* Spaziatura tra le notizie */
+.news-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Linea nera sotto la sezione */
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #000; /* Linea nera */
+}
+
+/* Stile base per le frecce */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* Rimuove le icone Bootstrap */
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: black;
+}
+
+/* Freccia sinistra (Unicode) */
+.carousel-control-prev-icon::before {
+    content: '\2039'; /* ‹ */
+}
+
+/* Freccia destra (Unicode) */
+.carousel-control-next-icon::before {
+    content: '\203A'; /* › */
+}
+
